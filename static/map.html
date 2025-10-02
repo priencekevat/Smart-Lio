@@ -1,0 +1,30 @@
+<!-- Layer button -->
+<div class="layer-button" id="layerBtn" title="Layers">🗺️</div>
+
+<!-- Layer panel (hidden by default) -->
+<div class="layer-panel" id="layerPanel" aria-hidden="true">
+  <h4 id="panelTitle">Smart Lio — Layers</h4>
+  <div id="layersList"></div>
+  <div style="font-size:12px;color:#666;margin-top:6px">Click to show/hide layer</div>
+</div>
+
+<script>
+  // Get references
+  const layerBtn = document.getElementById("layerBtn");
+  const layerPanel = document.getElementById("layerPanel");
+
+  // ✅ CLICK EVENT to toggle layer list
+  layerBtn.addEventListener("click", function () {
+    if (layerPanel.style.display === "block") {
+      layerPanel.style.display = "none";
+      layerPanel.setAttribute("aria-hidden", "true");
+    } else {
+      layerPanel.style.display = "block";
+      layerPanel.setAttribute("aria-hidden", "false");
+    }
+  });
+
+  // ✅ ensure panel is above map clicks
+  layerPanel.style.pointerEvents = "auto";
+  layerPanel.style.zIndex = "99999";
+</script>

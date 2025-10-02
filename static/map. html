@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Lio Map - Original Look</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <style>
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h2 style="text-align:center;">🌍 Smart Lio Real Map</h2>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Step 1: Map initialize (India by default)
+    var map = L.map('map').setView([20.5937, 78.9629], 5);
+
+    // Step 2: Layers
+    var normal = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 20,
+      attribution: '© OpenStreetMap'
+    });
+
+    var satellite = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      subdomains:['mt0','mt1','mt2','mt3'],
+      attribution: '© Google Satellite'
+    });
+
+    var hybrid = L.tileLayer('https://{s}.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      subdomains:['mt0','mt1','mt2','mt3'],
+      attribution: '© Google Hybrid'
+    });
+
+    // Default: Hybrid (original look)
+    hybrid.addTo(map);
+
+    // Step 3: Layer control
+    L.control.layers({
+      "Normal": normal,
+      "Satellite": satellite,
+      "Hybrid (Original Look)": hybrid
+    }).addTo(map);
+
+    // Step 4: Backend locations markers
+    fetch("http://127.0.0.1:8000/locations")
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(loc => {
+          L.marker([loc.latitude, loc.longitude])
+            .addTo(map)
+            .bindPopup(`<b>${loc.name}</b><br>Lat: ${loc.latitude}, Lng: ${loc.longitude}`);
+        });
+      });
+  </script>
+</body>
+</html>

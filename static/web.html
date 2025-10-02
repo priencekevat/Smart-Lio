@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartLio World Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map { height: 100vh; }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;">🌍 SmartLio - World GPS Map</h2>
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Map initialize
+        var map = L.map('map').setView([20, 0], 2); // World view
+
+        // Tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+        }).addTo(map);
+
+        // API call to fetch saved locations
+        async function loadLocations() {
+            let response = await fetch("http://127.0.0.1:8000/locations");
+            let data = await response.json();
+
+            data.forEach(loc => {
+                L.marker([loc.latitude, loc.longitude])
+                  .addTo(map)
+                  .bindPopup(`<b>${loc.name}</b><br>Lat: ${loc.latitude}, Lng: ${loc.longitude}`);
+            });
+        }
+
+        loadLocations();
+    </script>
+</body>
+</html>
