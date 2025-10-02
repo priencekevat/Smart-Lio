@@ -1,5 +1,7 @@
 # 📌 Smart Lio – Final Master Checklist  
 
+---
+
 <<<<<<< HEAD
 ---
 
@@ -85,6 +87,129 @@
 69. ♻️ Zero-Waste Social (nearest recycle/donate).  
 70. 🧠 Mind Health Companion (mood detect + help).  
 71. 🏙️ Dynamic Business Ecosystem extended analytics.  
+
+---
+
+### 🌍 Natural & Environment  
+72. Parks & Gardens highlight 🌳  
+73. Playgrounds highlight 🏏  
+74. Forest / Green zones highlight 🌲  
+75. Rivers, Lakes, Ponds highlight 💧  
+76. Hills / Mountains highlight ⛰️  
+77. Beaches / Sea highlight 🌊  
+78. Agricultural land / Farms highlight 🌾  
+79. Open land plots highlight 🟩  
+
+---
+
+### 🏛 Government & Public Utilities  
+80. Police Stations 🚔  
+81. Fire Stations 🚒  
+82. Hospitals 🏥  
+83. Clinics 🩺  
+84. Blood Banks 🩸  
+85. Government Buildings 🏛  
+86. Courts ⚖️  
+87. Post Office 📮  
+88. Municipal Offices 🏢  
+89. RTO / Transport Offices 🚘  
+
+---
+
+### 🏙 Transport & Roads  
+90. Main Roads highlight 🛣  
+91. Old Roads highlight (secondary/grey)  
+92. Highways highlight 🛤  
+93. Flyovers / Bridges 🌉  
+94. Bus Stops 🚏  
+95. Bus Depots 🚌  
+96. Metro / Railway Stations 🚉  
+97. Airports ✈️  
+98. Taxi/Rickshaw Stands 🚖  
+99. Parking Zones 🅿️  
+100. EV Charging Stations ⚡🔋  
+101. Petrol/Diesel Pumps ⛽  
+
+---
+
+### 🏬 Business & Economy  
+102. Shops 🏪  
+103. Markets 🛍  
+104. Supermarkets 🛒  
+105. Malls 🏬  
+106. Restaurants 🍴  
+107. Cafes ☕  
+108. Hotels 🏨  
+109. Gyms 🏋️‍♀️  
+110. Salons 💇‍♀️  
+111. Theatres 🎭  
+112. Cinemas 🎬  
+113. Bars/Pubs 🍻  
+
+---
+
+### 🏠 Private & Social  
+114. Residential Colonies 🏘  
+115. Apartments 🏢  
+116. Hostels 🏚  
+117. Farmhouses 🏡  
+118. Offices 🖥  
+119. Co-working spaces 💼  
+
+---
+
+### 🎓 Education  
+120. Schools 🎓  
+121. Colleges 🎒  
+122. Universities 🏫  
+123. Libraries 📚  
+124. Coaching Centres 📝  
+
+---
+
+### ⛪ Religious & Cultural  
+125. Temples 🛕  
+126. Mosques 🕌  
+127. Churches ✝️  
+128. Gurudwaras 🕉  
+129. Monuments 🗿  
+130. Museums 🖼  
+131. Art Galleries 🎨  
+
+---
+
+### 💳 Banking & Financial  
+132. Banks 🏦  
+133. ATMs 💳  
+134. Insurance Offices 🧾  
+135. Financial Services 💼  
+
+---
+
+### 📡 Communication & Tech  
+136. Telecom Towers 📡  
+137. Cyber Cafes 💻  
+138. Internet Offices 🌐  
+139. Data Centers 🖥  
+
+---
+
+### 🎯 Entertainment & Recreation  
+140. Clubs 🪩  
+141. Pubs 🍺  
+142. Game Zones 🎮  
+143. Stadiums 🏟  
+144. Resorts 🏝  
+145. Picnic Spots 🧺  
+
+---
+
+### 🚨 Emergency & Safety  
+146. SOS button (Family alert) 🚨  
+147. Nearby Emergency Shelters 🛑  
+148. Disaster-prone Zones ⚠️  
+149. CCTV Covered Areas 📷  
+150. Safe Zones & Danger Zones 🚷  
 
 ---
 
