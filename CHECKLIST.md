@@ -1,7 +1,10 @@
 # 📌 Smart Lio – Final Master Checklist  
 
+<<<<<<< HEAD
 ---
 
+=======
+>>>>>>> 2cc3cfa (Create CHECKLIST.md)
 ### ✅ Core GPS Features (Base 60 Points)  
 1. Map rendering smooth.  
 2. Zoom in/out stable.  
@@ -85,6 +88,7 @@
 
 ---
 
+<<<<<<< HEAD
 ### 🌍 Natural & Environment  
 72. Parks & Gardens highlight 🌳  
 73. Playgrounds highlight 🏏  
@@ -208,6 +212,8 @@
 
 ---
 
+=======
+>>>>>>> 2cc3cfa (Create CHECKLIST.md)
 ## 🎯 Roadmap (2 Months)  
 - **Week 1–2:** GitHub shift + base fix + language dropdown stable.  
 - **Week 3–4:** POI icons HD + categories refine + polygon highlight.  
