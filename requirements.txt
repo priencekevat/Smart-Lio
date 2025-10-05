@@ -4,3 +4,4 @@ pydantic
 requests
 python-multipart
 jinja2
+sqlalchemy
