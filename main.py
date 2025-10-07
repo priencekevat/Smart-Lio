@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import Optional
@@ -18,9 +19,12 @@ DB_PATH = "smartlio.db"
 if not os.path.exists("static"):
     os.makedirs("static")
 
+
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Database Helper
+
+# ----- Database Helper -----
 def get_db():
     conn = sqlite3.connect(DB_PATH, check_same_thread=False)
     conn.row_factory = sqlite3.Row
@@ -49,5 +53,4 @@ def list_families():
     return {"families": [dict(row) for row in rows]}
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
