@@ -7,3 +7,10 @@ python-multipart
 requests
 passlib[bcrypt]
 itsdangerous
+flask
+gunicorn
+geopy
+folium
+pandas
+numpy
+scikit-learn
