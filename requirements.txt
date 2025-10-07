@@ -1,4 +1,5 @@
 fastapi
+uvicorn
 pydantic
 requests
 python-multipart
@@ -14,4 +15,3 @@ pyttsx3
 speechrecognition
 folium
 geopy
-uvicorn
