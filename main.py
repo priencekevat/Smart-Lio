@@ -8,7 +8,10 @@ import os
 import time
 from config import *
 
-# Initialize FastAPI
+# ================================================
+# Smart Lio Backend (FastAPI + Render Ready)
+# ================================================
+
 app = FastAPI(title="Smart Lio API (with Family & Helpline Demo)")
 
 DB_PATH = "smartlio.db"
@@ -137,7 +140,7 @@ class SOSReq(BaseModel):
 # ----- Root -----
 @app.get("/")
 def root():
-    return {"message": "Smart Lio server is running 🚀"}
+    return {"message": "Smart Lio is live on Render 🚀"}
 
 
 # ----- Business APIs -----
@@ -281,7 +284,7 @@ def serve_map():
     raise HTTPException(status_code=404, detail="map.html not found")
 
 
-# ----- Run App -----
+# ----- Run App (for local testing only) -----
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
