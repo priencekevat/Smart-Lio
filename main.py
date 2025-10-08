@@ -284,6 +284,13 @@ def serve_map():
     raise HTTPException(status_code=404, detail="map.html not found")
 
 
+@app.get("/checklist")
+def serve_checklist():
+    path = "CHECKLIST.md"
+    if os.path.exists(path):
+        return FileResponse(path, media_type="text/markdown")
+    raise HTTPException(status_code=404, detail="CHECKLIST.md not found")
+
 # ----- Run App (for local testing only) -----
 if __name__ == "__main__":
     import uvicorn
