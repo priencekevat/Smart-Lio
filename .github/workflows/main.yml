@@ -27,7 +27,7 @@ jobs:
       run: |
         echo "🚀 SmartLio Auto Build Started"
         mkdir output
-        cp -r . output/
+        rsync -av --exclude 'output' . output/
         echo "✅ SmartLio build completed successfully"
 
     - name: Upload Artifact
