@@ -26,8 +26,8 @@ jobs:
     - name: Build Streamlit App Package
       run: |
         echo "🚀 SmartLio Auto Build Started"
-        mkdir -p smartlio_output
-        cp -r * smartlio_output/
+        mkdir output
+        cp -r . output/
         echo "✅ SmartLio build completed successfully"
 
     - name: Upload Artifact
